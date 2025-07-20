@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SYNCNODE – Secure, Scalable Blockchain Infrastructure">
+    <meta property="og:description" content="Power your project with SYNCNODE — a secure, compliant, and community-driven blockchain node infrastructure designed for reliability and growth.">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SYNCNODE – Scalable Blockchain Infrastructure You Can Trust">
+    <meta name="twitter:description" content="SYNCNODE empowers projects with high-uptime, secure nodes that balance user needs with compliance. Launch, scale, and secure your blockchain experience.">
+
+    <!-- SEO Fallback Meta Description -->
+    <meta name="description" content="SYNCNODE is a high-performance blockchain infrastructure platform offering secure, reliable, and compliant node services for Web3 applications.">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Syncode-Autofix</title>
+</head>
+
+<style>
+    /* Keyframe for moving up and down */
+    @keyframes moveUpDown {
+        0%, 100% {
+            transform: translateY(0%);
+        }
+        50% {
+            transform: translateY(100px);
+        }
+    }
+
+    @keyframes moveDownUp {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(100px);
+        }
+    }
+
+    .blob-left {
+        animation: moveUpDown 3s infinite ease-in-out;
+    }
+
+    .blob-right {
+        animation: moveDownUp 3s infinite ease-in-out;
+    }
+
+    .card {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+            transition: border-color 0.4s ease-in-out;
+        }
+
+    .card::before, .card::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #5231D4;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .card::before {
+        top: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    .card::after {
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    /* Hover Effect */
+    .card:hover {
+        border-color: #5231D4;
+    }
+
+    .card:hover::before, .card:hover::after {
+        transform: scaleX(1);
+    }
+
+    /* Zoom effect on text */
+    .card-text {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover .card-text {
+        transform: scale(1.1);
+    }
+
+
+
+    .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    }
+    body {
+        top: 0 !important;
+    }
+    .goog-te-menu-frame {
+        z-index: 999999 !important;
+        position: fixed !important;
+    }
+    .goog-te-combo {
+        background: #333;
+        color: white;
+        padding: 6px;
+        border-radius: 4px;
+        border: 1px solid #444;
+    }
+    .goog-te-gadget {
+        color: transparent !important;
+    }
+    .goog-te-gadget .goog-te-combo {
+        margin: 4px 0;
+    }
+    #google_translate_element {
+        position: fixed;
+        top: 60px;
+        right: 80px;
+        z-index: 9999;
+    }
+    @media screen and (max-width: 768px) {
+        #google_translate_element {
+            top: 20px;
+            right: 15px;
+        }
+        .goog-te-combo {
+            padding: 4px;
+            font-size: 14px;
+        }
+    }
+
+</style>
+
+<body class="bg-[#0E1621] text-white">
+    <div id="google_translate_element" class="mt-10">
+    <i class="ri-translate-2" style="color: black; margin-right: 5px;"></i>
+    </div>
+
+     <header class="z-30 w-full bg-[#0E1621] fixed top-0 left-0">
+        <nav id="menu-bar" class="flex justify-between items-center px-6 md:px-20 lg:px-12 h-16 lg:h-32 xl:px-24">
+            <div class="mt-4 lg:mt-12">
+                <img src="img/logo1.png" alt="" class="w-28 md:w-56 lg:w-48 xl:w-52">
+            </div>
+            <i class="ri-menu-line lg:hidden md:mt-10 mt-4 text-2xl" id="hamburger"></i>
+            <div id="nav-menu" class="-top-[400%] duration-500 ease-in-out flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-16 xl:gap-32 lg:static lg:min-h-fit lg:bg-transparent lg:w-auto absolute bg-[#0E1621] left-0 min-h-[10vh] w-full mt-14 px-6 md:px-12">
+                
+                <ul class="space-x-4 flex flex-col items-start lg:items-center gap-2 lg:flex-row lg:pt-0">
+                    <li class="lg:border-b-2 border-[#5231D4] p-2">
+                        <a href="" class="font-semibold text-nowrap bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text text-transparent font-serif">Validate Firmware</a>
+                    </li>
+                    <hr class="w-full lg:hidden ">
+                    <li class="lg:hover:border-b-2 duration-200 border-[#5231D4 border-[#5231D4] p-2">
+                        <a href="wallet.html" class="font-semibold bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text font-serif text-transparent">Migration</a>
+                    </li>
+                </ul>
+                
+                
+                
+
+                <div class=" pt-4 lg:pt-0 flex justify-between items-center gap-4">
+                    
+                    <select name="" id="" class="border-1 font-semibold px-6 py-2 border-[#23262c] shadow-md bg-[#0e1c30] focus:outline-none font-serif text-nowrap bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text text-transparent">
+                        <option value="" class="px-6 py-2 font-semibold cursor-pointer text-nowrap bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text text-transparent">English</option>
+                    </select>
+                    <div class="space-x-4 lg:flex">
+                        <button onclick="redirect()" class="border-[#5231D4] border-2 px-6 py-2 cursor-pointer font-semibold text-nowrap bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text text-transparent font-serif">Connect</button>
+                        <button onclick="redirect()" class="bg-gradient-to-r border-2 from-[#473886] to-[#21164a] hover:opacity-50 ease-in-out duration-300 rounded-md font-semibold px-6 py-2 cursor-pointer text-[#d2d2d2] font-serif">Stake</button>
+                    </div>
+                    <i class="lg:hidden absolute top-4 right-4 ri-close-large-fill text-white text-2xl z-50 cursor-pointer" id="nav-close"></i>
+                </div>
+            </div>
+         </nav>
+    </header>
+
+  
+
+    <section class="pt-28 pb-6">
+        <div class="px-6 md:px-20 lg:px-12 xl:px-24">
+            <!-- right div -->
+            <div class="md:w-2/4 mt-6 md:mt-20 lg:mt-48 home__content">
+                <h2 class="font-san bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text text-transparent space-y-0.5 font-bold lg:text-6xl text-3xl md:text-4xl font-serif">
+                    Join top-tier <br> AI, web3 & metaverse <br class=""> syncronization <br> with <span class="bg-gradient-to-r from-[#b7f3f6] to-[#5f7e80] bg-clip-text text-transparent">Syncnode</span>
+                </h2>
+                <p class="mt-2 lg:mt-3 text-sm md:text-xl lg:text-lg text-[#83878a] font-semibold tracking-wide font-serif">Open and Decentralized Protocol for Syncing Various Wallets to Dapps.</p>
+            </div>
+
+        <div class="mt-10 md:w-1/2 button__contents">
+
+        <!-- First Row -->
+        <div class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-6 gap-2 mt-6 ">
+            <button onclick="redirect()" class="cursor-pointer w-full p-2 bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#291f52] text-[#C6C6C6] text-xs font-semibold rounded-md">Staking</button>
+            <button onclick="redirect()" class="cursor-pointer w-full p-2 bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] text-[#C6C6C6] text-xs font-semibold rounded-md">Bridge</button>
+            <button onclick="redirect()" class="cursor-pointer w-full p-2 bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] text-[#C6C6C6] text-xs font-semibold rounded-md">Connect Wallet</button>
+            <button onclick="redirect()" class="cursor-pointer w-full p-2 bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] text-[#C6C6C6] text-xs font-semibold rounded-md">Claim</button>
+        </div>
+
+        <!-- Second Row -->
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 mt-2">
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2 text-[#C6C6C6] text-xs font-semibold rounded-md">KYC</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2 text-[#C6C6C6] text-xs font-semibold rounded-md">BUY</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full col-span-2 md:col-span-2 lg:col-span-1 p-2 text-[#C6C6C6] text-xs font-semibold rounded-md">Transaction Delay</button>
+        </div>
+
+        <!-- Third Row -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-2 mt-2">
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2  text-[#C6C6C6] text-xs font-semibold rounded-md">NFT</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2  text-[#C6C6C6] text-xs font-semibold rounded-md">Airdrop</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2 text-[#C6C6C6] text-xs font-semibold rounded-md">Wallet Glitch</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2  text-[#C6C6C6] text-xs font-semibold rounded-md">Rectification</button>
+        </div>
+
+        <!-- Fourth Row -->
+        <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-2 mt-2">
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2 text-[#C6C6C6] text-xs font-semibold rounded-md">Presale</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full col-span-2 md:col-span-1 p-2 text-[#C6C6C6] text-xs font-semibold rounded-md">Asset Recovery</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2  text-[#C6C6C6] text-xs font-semibold rounded-md">Migration</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2  text-[#C6C6C6] text-xs font-semibold rounded-md">RPC Server</button>
+        </div>
+
+        <!-- Fifth Row -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 mt-2">
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2  text-[#C6C6C6] text-xs font-semibold rounded-md">Validate Wallet</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2  text-[#C6C6C6] text-xs font-semibold rounded-md">Buy NFT</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2  text-[#C6C6C6] text-xs font-semibold rounded-md">Market Place</button>
+            <button onclick="redirect()" class="cursor-pointer bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2  text-[#C6C6C6] text-xs font-semibold rounded-md">Migration V2</button>
+        </div>
+
+        <!-- Sixth Row -->
+        <div class="grid grid-cols-3 lg:grid-cols-6 gap-2 mt-2">
+            <button onclick="redirect()" class="bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2 text-[#C6C6C6] cursor-pointer text-xs font-semibold rounded-md">Gas</button>
+            <button onclick="redirect()" class="bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2 text-[#C6C6C6] cursor-pointer text-xs font-semibold rounded-md">Buy Presale</button>
+            <button onclick="redirect()" class="bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full col-span-2 md:col-span-1 p-2 text-[#C6C6C6] cursor-pointer text-xs font-semibold rounded-md">Claim Reward</button>
+            <button onclick="redirect()" class="bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2 text-[#C6C6C6] cursor-pointer text-xs font-semibold rounded-md">Snapchat</button>
+            <button onclick="redirect()" class="bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#21164a] w-full p-2 text-[#C6C6C6] cursor-pointer text-xs font-semibold rounded-md">Whitelist</button>
+        </div>
+
+        </div>
+
+
+            <!-- <div class="mt-10 md:w-1/2">
+
+                <div class="cursor-pointers grid grid-cols-3 gap-2 space-x-1 mt-6 md:grid-cols-2 lg:grid-cols-6">
+                    <div class="p-2 bg-[#5231D4] font-semibold text-center rounded-md text-xs cursor-pointer col-span-1"><button onclick="redirect()"  class="cursor-pointer">Staking</button></div>
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md text-xs md:col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Bridge</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center text-xs col-span-2 rounded-md md:col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Connect Wallet</button></div>
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md text-xs col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Claim</button></div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-6 space-x-1 mt-2 cursor-pointer">
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md text-xs col-span-1 cursor-pointer"><button onclick="redirect()"  class="cursor-pointer">KYC</button></div>
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md text-xs col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">BUY</button></div>
+                    <div class="p-2 bg-[#5231D4] text-center col-span-2 rounded-md text-xs cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Transaction Delay</button></div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-2 space-x-1 mt-2">
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md col-span-1 text-xs cursor-pointer"><button onclick="redirect()"  class="cursor-pointer">NFT</button></div>
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md col-span-1 text-xs cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Airdrop</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center rounded-md md:col-span-1 text-xs cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Wallet Glitch</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center rounded-md md:col-span-1 text-xs cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Rectification</button></div>
+                </div>
+
+                <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-2 space-x-1 mt-2">
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md col-span-1 text-xs cursor-pointer"><button onclick="redirect()"  class="cursor-pointer">Presale</button></div>
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md text-xs col-span-2 md:col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Asset Recovery</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center rounded-md text-xs cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Migration</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center rounded-md text-xs cursor-pointer"><button onclick="redirect()" class="cursor-pointer">RPC Server</button></div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 space-x-1 mt-2">
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md text-xs col-span-1 md:col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Validate Wallet</button></div>
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md text-xs col-span-1 md:col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Buy NFT</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center rounded-md text-xs md:col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Market Place</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center rounded-md text-xs md:col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Migration V2</button></div>
+                </div>
+
+                <div class="grid grid-cols-3 lg:grid-cols-6 gap-2 space-x-1 mt-2">
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md col-span-1 text-xs cursor-pointer"><button onclick="redirect()"  class="cursor-pointer">Gas</button></div>
+                    <div class="p-2 bg-[#5231D4] text-center rounded-md col-span-1 text-xs cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Buy Presale</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center rounded-md text-xs col-span-2 md:col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Claim Reward</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center rounded-md text-xs col-span-1 cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Snapchat</button></div>
+                    <div class="p-2 bg-[#5231D4] space-x-20 text-center rounded-md text-xs cursor-pointer"><button onclick="redirect()" class="cursor-pointer">Whitelist</button></div>
+                </div>
+            </div> -->
+
+            <div class="mt-10">
+                <h2 class="uppercase mb-2 text-[#83878a] font-bold  font-serif">Available ON:</h2>
+                <div class="flex items-center gap-2 flex-wrap">
+                    <img src="img/camelot.svg" alt="" class="w-16">
+                    <img src="img/bybit.svg" alt="" class="w-10">
+                    <img src="img/gate.svg" alt="" class="w-16">
+                    <img src="img/huobi.svg" alt="" class="w-12">
+                    <img src="img/kucoin..svg" alt="" class="w-12">
+                    <img src="img/pancakeswap.svg" alt="" class="w-24">
+                    <img src="img/uniswap.svg" alt="" class="w-24">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-16 lg:pt-20 pb-6">
+        <div class="px-6 md:px-20 lg:px-12 xl:px-24">
+           <div class="flex lg:flex-row-reverse flex-col gap-10 pt-8"> 
+                <div class="lg:w-1/2 flex flex-col gap-6 font-serif">
+                    <div class="pb-4 security__content2">
+                        <h1 class="bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text text-transparent text-start text-2xl font-semibold lg:text-4xl md:text-3xl font-serif">How to join Top Tier Web Syncronization Dapp</h1>
+                        <div class="mt-2 w-20 h-0.5 bg-[#5231D4]">
+                            <div class="-top-1 rounded-ee-sm -right-8 relative w-2.5 h-2.5 bg-[#5231D4]"></div>
+                        </div>
+                        <p class="text-start text-sm mt-2 text-[#83878a]">Only 3 little steps are needed for you to start enjoying all the advantages of Syncnode</p>
+                    </div>
+
+                    <div class="flex flex-col gap-6 security__content3">
+                        <div class="relative">
+                            <i class="text-normal bg-[#272E38] text-2xl ri-layout-horizontal-line absolute border border-[#272E38] rounded-full p-2 text-[#5231D4]"></i>
+                            <div class="ml-16 w-auto">
+                                <h1>Select Wallet</h1>
+                                <p class="tracking-wider text-sm mt-2 text-[#83878a]">In other to create a linking between syncnode and your wallet protocol, 
+                                    on the landing page, click on create connection and the select the wallet of concern to you.
+                                </p>
+                                <button onclick="redirect()" class=" border-2 border-gray-500 bg-gradient-to-r from-[#473886] to-[#291f52] px-6 py-2 rounded-md mt-2 cursor-pointer">Select Wallet</button>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <i class="bg-[#272E38] text-2xl ri-global-line absolute border border-[#272E38] rounded-full p-2 text-[#5231D4]"></i>
+                            <div class="ml-16 w-auto">
+                                <h1>Establish Connection</h1>
+                                <p class="tracking-wider text-sm mt-2 text-[#83878a]">
+                                    After selecting wallet, the system will automatically verify the 
+                                    status of your wallet via our AML verification process and afterwards create a 
+                                    secure end to end connection. If it's your first time linking that particular wallet of 
+                                    concern you may be required to link manually using the wallet credentintials.
+                                </p>
+                                <button onclick="redirect()" class="border-2 border-gray-500 bg-gradient-to-r from-[#473886] to-[#291f52] px-6 py-2 rounded-md mt-2 cursor-pointer">Connect</button>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <i class=""></i>
+                            <i class="bg-[#272E38] text-2xl ri-stack-line absolute border border-[#272E38] rounded-full p-2 text-[#5231D4]"></i>
+                            <div class="ml-16 w-auto">
+                                <h1>Error Rectification</h1>
+                                <p class="tracking-wider text-sm mt-2 text-[#83878a]">Our syncnode will automatically rectify any lingering defect noticed in the 
+                                    connected wallet and produce a feedback of clearification on the result page.
+                                </p>
+                                <button onclick="redirect()" class="border-2 border-gray-500 bg-gradient-to-r from-[#473886] to-[#291f52] px-6 py-2 rounded-md mt-2 cursor-pointer">Rectify</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 security__content1">
+                <div class="w-full bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#291f52] from- t0- lg:p-10 p-4 rounded-md mx-auto">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-serif text-center font-bold mt-4 md:mt-0">Guaranteed Security</h2>
+                    <div class="flex items-center flex-col md:mt-6 mr-2 mt-4">
+                        <p class="text-center font-serif md:font-lg tracking-wider text-normal text-[#83878a] pb-6">
+                            All Syncnodes operate under a robust and transparent security framework, 
+                            ensuring the highest level of protection for user data, assets, and network operations.<br><br>
+                            Our infrastructure is continuously monitored and reinforced with best-in-class security protocols, 
+                            including real-time threat detection, multi-layer encryption, and rigorous access control mechanisms.<br><br>
+                            Beyond technical safeguards, Syncnodes are governed by a guaranteed security policy that aligns 
+                            with industry standards and regulatory requirements. This policy is not only designed to prevent 
+                            vulnerabilities and malicious activity, but also to adapt proactively to the rapidly evolving 
+                            landscape of decentralized technologies.<br><br>
+                            We believe that decentralization must be secure, responsible, 
+                            and inclusive which is why every Syncnode is built to support both innovation and integrity.
+                        </p>
+                        <button onclick="redirect()" class="cursor-pointer px-8 rounded-md font-bold py-2 bg-gradient-to-r from-[#a294d8] to-[#4b436e] mt-4">Learn More</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#111924] pt-16 lg:pt-20 pb-6">
+        <div class="px-6 md:px-20 lg:px-12 xl:px-24">
+            <div class="why__content1 flex flex-col items-center justify-center pt-8 gap-2">
+                <h1 class="bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text text-transparent lg:text-4xl text-center text-3xl font-serif">Why Choose SYNCNODE ?</h1>
+                <div class="mt-2 w-20 h-0.5 bg-[#5231D4]">
+                    <div class="-top-1 rounded-ee-sm -right-8 relative w-2.5 h-2.5 bg-[#5231D4]"></div>
+                </div>
+                <p class="text-center mt-4 font-serif align-middle max-w-md text-[#83878a]">
+                    SYNCNODE stands out as a leading solution in 
+                    blockchain infrastructure for combining cutting-edge 
+                    technology, and community-first values to support a 
+                    wide range of decentralized applications and networks.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto justify-center mt-10">
+
+                 <div class="why__content2 card cursor-pointer mb-6 w-[300px] lg:w-[250px] lg:h-[350px] h-[300px] bg-[#242B35] rounded relative">
+                    <h1 class="card-text lg:text-6xl absolute top-5 right-5 text-3xl uppercase font-bold z-10 text-[#595a5c]">SYNC</h1>
+                    <div class="flex flex-col items-center justify-center mt-6">
+                        <i class="z-20 lg:opacity-80 ri-lock-line text-center px-4 py-4 font-bold text-2xl rounded-full bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#291f52]"></i>
+                        <div class="flex flex-col items-center p-2 mt-2">
+                            <h3 class="text-lg font-serif">Enterprise-Grade Security</h3>
+                            <p class="text-center font-serif mt-2 text-[#83878a]">
+                                At the heart of SYNCNODE is a robust security framework. 
+                                Each node is engineered with multiple layers of protection, 
+                                and real-time threat monitoring.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="why__content2 card cursor-pointer mb-6 w-[300px] lg:w-[250px] lg:h-[350px] h-[300px] bg-[#242B35] rounded relative">
+                    <h1 class="card-text lg:text-6xl absolute top-5 right-5 text-3xl uppercase font-bold z-10 text-[#595a5c]">NODE</h1>
+                    <div class="flex flex-col items-center justify-center mt-6">
+                        <i class="z-20 lg:opacity-80  ri-reset-left-line text-center px-4 py-4 font-bold text-2xl rounded-full bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#291f52]"></i>
+                        <div class="flex flex-col items-center p-2 mt-2">
+                            <h3 class="text-lg font-serif"> Real-Time Synchronization</h3>
+                            <p class="text-center font-serif mt-2 text-[#83878a]">
+                                SYNCNODE is optimized for full, uninterrupted 
+                                synchronization with blockchain networks. 
+                                It ensures all nodes stay updated with the 
+                                latest blocks and state changes without delay.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why__content3 card cursor-pointer mb-6 w-[300px] lg:w-[250px] lg:h-[350px] h-[300px] bg-[#242B35] rounded relative">
+                    <h1 class="card-text lg:text-6xl absolute top-5 right-5 text-3xl uppercase font-bold z-10 text-[#595a5c]">SYNC</h1>
+                    <div class="flex flex-col items-center justify-center mt-6">
+                        <i class="z-20 lg:opacity-80 ri-expand-diagonal-s-2-fill text-center px-4 py-4 font-bold text-2xl rounded-full bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#291f52]"></i>
+                        <div class="flex flex-col items-center p-2 mt-2">
+                            <h3 class="text-lg text-center font-serif">Flexible, Scalable Architecture</h3>
+                            <p class="text-center font-serif mt-2 text-[#83878a]">
+                                SYNCNODE provides a scalable node infrastructure 
+                                that grows with your needs. Whether you’re 
+                                launching a new token, deploying a cross-chain bridge, 
+                                or supporting NFT minting at scale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why__content3 card cursor-pointer mb-6 w-[300px] lg:w-[250px] lg:h-[350px] h-[300px] bg-[#242B35] rounded relative">
+                    <h1 class="card-text lg:text-6xl absolute top-5 right-5 text-3xl uppercase font-bold z-10 text-[#595a5c]">NODE</h1>
+                    <div class="flex flex-col items-center justify-center mt-6">
+                        <i class="z-20 lg:opacity-80 ri-global-line text-center px-4 py-4 font-bold text-2xl rounded-full bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#291f52]"></i>
+                        <div class="flex flex-col items-center p-2 mt-2">
+                            <h3 class="text-lg font-serif text-center">Global Redundancy and Uptime</h3>
+                            <p class="text-center font-serif mt-2 text-[#83878a]">
+                                SYNCNODE’s infrastructure spans multiple regions and availability zones, 
+                                ensuring global uptime and resilience. Even in 
+                                high-traffic or adverse network conditions, 
+                                our nodes remain stable and responsive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="relative pt-16 pb-6">
+        <div class="px-6 md:px-20 lg:px-12 xl:px-24">
+            <div class="flex flex-col lg:flex-row gap-10 items-center">
+                <div class="lg:w-1/2 qa__content1">
+                    <img src="img/Syncnode.png" alt="">
+                </div>
+
+                <div class="mt-10 lg:w-1/2 qa__content2">
+                    <div class="flex flex-col justify-start">
+                        <h1 class="bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text text-transparent text-center font-serif text-3xl">FREQUENTLY ASKED QUESTIONS</h1>
+                        <div class="z-30 mx-auto mt-2 w-20 h-0.5 bg-[#5231D4]">
+                            <div class="-top-1 rounded-ee-sm -right-8 relative w-2.5 h-2.5 bg-[#5231D4]"></div>
+                        </div>
+                        <p class="mt-4 font-serif z-30 text-center text-[#83878a]">Haven't found the answers you are looking for?</p>
+                    </div>
+
+
+                    <div class="flex font-serif flex-col gap-4 lg:gap-6 items-center justify-center mt-6 mb-6">
+                        <div class="relative w-full overflow-hidden">
+                            <input type="checkbox" name="" id="" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-12 cursor-pointer">
+                            <div class="h-16 w-full pl-5 flex items-center border border-gray-300 cursor-pointer">
+                                <h1 class="text-[#83878a] tracking-tighter text-sm">What chains does Syncnode support?</h1>
+                            </div>
+                            <!-- arrow icon -->
+                            <div class="absolute top-3 right-0 transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+                                <i class="ri-arrow-drop-down-line text-4xl"></i>
+                            </div>
+
+                            <!-- content -->
+                            <div class="bg-[#1F2631] transition-all duration-500 max-h-0 peer-checked:max-h-180">
+                                <div class="p-4">
+                                    <p class="text-gray-400">
+                                        Syncnode operates as a chain-agnostic protocol, adhering to the CAIP-25 standard. 
+                                        While the WalletConnect protocol supports various chains, 
+                                        you can refer to the list for the known compatible blockchains. However, 
+                                        please note that our SDKs have certain limitations on the chains they support.<br><br>
+                                        If you intend to extend support for non-EVM chains in your wallet or dapp, 
+                                        it is recommended to review the cross-chain primitives supported by 
+                                        the WalletConnect protocol through the Chain Agnostic Standards Alliance's Namespaces project.<br><br> 
+                                        Additionally, feel free to reach out to our community team for further guidance. 
+                                        In the event that the desired chain lacks documentation in the Namespaces project, 
+                                        you can collaborate with an expert in the respective chain's tooling and submit a namespaces PR.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="relative w-full overflow-hidden">
+                            <input type="checkbox" name="" id="" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-12 cursor-pointer">
+                            <div class="h-20 lg:h-16 p-4 w-full flex items-center border border-gray-300 cursor-pointer">
+                                <h1 class="text-start text-[#83878a] tracking-tightest text-sm">How can I reconnect to the same pairing if my browser was restarted?</h1>
+                            </div>
+                            <!-- arrow icon -->
+                            <div class="absolute top-3 right-0 transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+                                <i class="ri-arrow-drop-down-line text-4xl"></i>
+                            </div>
+
+                            <!-- content -->
+                            <div class="bg-[#1F2631] transition-all duration-500 max-h-0 peer-checked:max-h-180">
+                                <div class="p-4">
+                                    <p class="text-gray-400">
+                                        The signClient will restore & reconnect its pairings automatically after the page is reloaded. 
+                                        All pairings are stored on the page's localStorage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative w-full overflow-hidden">
+                            <input type="checkbox" name="" id="" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-12 cursor-pointer">
+                            <div class="h-28 lg:h-16 p-4 w-full flex items-center border border-gray-300 cursor-pointer">
+                                <h1 class="text-[#83878a] tracking-tightest text-sm">Why is self-hosting not an option at this time? Are there plans to make this possible in the future?</h1>
+                            </div>
+                            <!-- arrow icon -->
+                            <div class="absolute top-3 right-0 transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+                                <i class="ri-arrow-drop-down-line text-4xl"></i>
+                            </div>
+
+                            <!-- content -->
+                            <div class="bg-[#1F2631] transition-all duration-500 max-h-0 peer-checked:max-h-180">
+                                <div class="p-4">
+                                    <p class="text-gray-400">
+                                        We understand the desire for developers to self-host their own relay. 
+                                        We share this vision, and have embarked on a decentralization roadmap in order to achieve this. 
+                                        By the end of this summer, we will launch a permissioned network and invite a select group 
+                                        of partners to participate in this crucial first phase.<br><br> Our objective is to make self-hosting relay a reality 
+                                        with the creation of the decentralized WalletConnect Network, 
+                                        and we appreciate your patience as we progress in this enormous mission.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative w-full overflow-hidden">
+                            <input type="checkbox" name="" id="" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-12 cursor-pointer">
+                            <div class="h-28 lg:h-16 p-5 w-full flex items-center border border-gray-300 cursor-pointer">
+                                <h1 class="text-[#83878a] tracking-tightest text-sm">How can we use a custom relay for our bridge without a WC URI parameter as the host?</h1>
+                            </div>
+                            <!-- arrow icon -->
+                            <div class="absolute top-3 right-0 transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+                                <i class="ri-arrow-drop-down-line text-4xl"></i>
+                            </div>
+
+                            <!-- content -->
+                            <div class="bg-[#1F2631] transition-all duration-500 max-h-0 peer-checked:max-h-180">
+                                <div class="p-4">
+                                    <p class="text-gray-400">
+                                        You are more than welcome to utilize a custom URI parameter during testing. 
+                                        However, it is currently not recommended for use in a production environment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-16 pb-6">
+        <div class="px-6 md:px-20 lg:px-12 xl:px-24">
+            <div class="flex flex-col lg:justify-between lg:flex-row items-center gap-8">
+                <div class="lg:w-1/2 footer__content1">
+                    <h3 class="text-center lg:text-start text-xl md:text-2xl bg-gradient-to-b from-[#C6C6C6] to-[#616161] bg-clip-text text-transparent">Subscribe to Our Newsletter</h3>
+                </div>
+
+                <div class="footer__content2 bg-[#282F39] rounded-full p-2 flex items-center w-full lg:w-1/2">
+                    <input type="text" name="" id="" placeholder="Email Address" class="relative border-2 h-8 border-[#282F39] shadow-2xl p-5 w-full bg-[#2f3743] rounded-full">
+                    <button class="absolute px-3 py-1 rounded-full bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#291f52] text-[#C6C6C6] font-serif md:right-24 right-10 lg:right-16 xl:right-28">Subscribe</button>
+                    <button id="scrollTopBtn" class="px-2 py-2 rounded-md hidden fixed bottom-5 right-5 bg-gradient-to-r border-2 border-gray-500 from-[#473886] to-[#291f52] text-[#C6C6C6] p-3  shadow-lg">
+                        <i class="ri-arrow-up-double-fill"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        
+           function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    { pageLanguage: 'en' },
+                    'google_translate_element' // Now matches the div ID
+                );
+            }
+    </script>
+</body>
+</html>
